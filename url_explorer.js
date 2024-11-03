@@ -10,3 +10,4 @@ console.log(`Query string is: ${url.search}`);
 console.log(`Query parameters:`);
 Array.from(url.searchParams.entries())
     .forEach((entry) => console.log(`\t- ${entry[0]} = ${entry[1]}`));
+
