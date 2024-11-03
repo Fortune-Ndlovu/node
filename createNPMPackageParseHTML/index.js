@@ -16,3 +16,11 @@ const html = `
 `;
 
 const $ = cheerio.load(html);
+
+$('div').append('<p>This is another paragraph.</p>');
+
+$('p').each((index, p) => {
+    console.log(`${index} - ${p.firstChild.data}`);
+});
+
+console.log($.html());
