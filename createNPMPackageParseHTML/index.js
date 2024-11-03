@@ -13,4 +13,6 @@ const html = `
         <button>Click me!</button>
     </body>
 </html>
-`
+`;
+
+const $ = cheerio.load(html);
